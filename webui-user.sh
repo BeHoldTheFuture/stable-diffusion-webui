@@ -25,8 +25,7 @@ export COMMANDLINE_ARGS="--skip-torch-cuda-test --precision full --no-half"
 #export LAUNCH_SCRIPT="launch.py"
 
 # install command for torch
-#export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
-
+export TORCH_COMMAND="pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu"
 # Requirements file to use for stable-diffusion-webui
 #export REQS_FILE="requirements_versions.txt"
 
@@ -44,5 +43,7 @@ export COMMANDLINE_ARGS="--skip-torch-cuda-test --precision full --no-half"
 
 # Uncomment to disable TCMalloc
 #export NO_TCMALLOC="True"
+
+export MIOPEN_DEBUG_COMGR_HIP_PCH_ENFORCE=0
 
 ###########################################
